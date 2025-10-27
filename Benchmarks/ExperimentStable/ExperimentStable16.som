@@ -1,0 +1,146 @@
+ExperimentStable16 = BenchmarkHarness (
+    | summedAverage elapsedTime totalTime |
+
+    initialize = (
+        super initialize.
+        summedAverage := 0.
+    )
+
+    initializeTime = (
+        totalTime := 0.
+        elapsedTime := 0.
+    )
+
+    run: params = (
+        | bench result |
+        self initialize.
+        self initializeTime.
+
+        params length < 2
+            ifTrue:  [ self exec: 100 ]
+            ifFalse: [ self exec: (params at: 2) asInteger ]
+    )
+
+   exec: numIterations = (
+        | total |
+        total := 0.
+        1 to: numIterations do: [ :i |
+            | startTime endTime runTime |
+            startTime := system clock_monotonic.
+            self run.
+            endTime := system clock_monotonic.
+            runTime := endTime - startTime.
+            total := total + runTime.
+        ].
+        (total // 1000000) println.
+   )
+
+   runBenchmark = (
+        | bench result |
+        bench := benchmarkClass new.
+        bench oneTimeSetup.
+
+        result := self doRuns: bench.
+        elapsedTime := result.
+        totalTime := totalTime + result.
+        " self reportBenchmark: bench result: result. "
+    )
+
+    run = (
+       | startTime endTime |
+
+       self printAll: false.
+
+       self benchmarkClass: BubbleSort.
+        self numIterations: 10.
+        self innerIterations: 10.
+        self runBenchmark.
+
+        self benchmarkClass: TreeSort.
+        self numIterations: 1.
+        self innerIterations: 2.
+        self runBenchmark.
+
+        self benchmarkClass: NBody.
+        self numIterations: 10.
+        self innerIterations: 1.
+        self runBenchmark.
+
+        self benchmarkClass: Json.
+        self numIterations: 2.
+        self innerIterations: 1.
+        self runBenchmark.
+
+        self benchmarkClass: Queens.
+        self numIterations: 2.
+        self innerIterations: 2.
+        self runBenchmark.
+
+        self benchmarkClass: Permute.
+        self numIterations: 5.
+        self innerIterations: 1.
+        self runBenchmark.
+
+        self benchmarkClass: QuickSort.
+        self numIterations: 2.
+        self innerIterations: 2.
+        self runBenchmark.
+
+        self benchmarkClass: Bounce.
+        self numIterations: 1.
+        self innerIterations: 10.
+        self runBenchmark.
+
+        self benchmarkClass: CD.
+        self numIterations: 1.
+        self innerIterations: 1.
+        self runBenchmark.
+
+        self benchmarkClass: Fannkuch.
+        self numIterations: 1.
+        self innerIterations: 2.
+        self runBenchmark.
+
+        self benchmarkClass: Storage.
+        self numIterations: 1.
+        self innerIterations: 2.
+        self runBenchmark.
+
+        self benchmarkClass: Towers.
+        self numIterations: 10.
+        self innerIterations: 2.
+        self runBenchmark.
+
+        self benchmarkClass: Sieve.
+        self numIterations: 10.
+        self innerIterations: 2.
+        self runBenchmark.
+
+        self benchmarkClass: PageRank.
+        self numIterations: 10.
+        self innerIterations: 10.
+        self runBenchmark.
+
+        self benchmarkClass: DeltaBlue.
+        self numIterations: 1.
+        self innerIterations: 1.
+        self runBenchmark.
+
+        self benchmarkClass: Mandelbrot.
+        self numIterations: 2.
+        self innerIterations: 2.
+        self runBenchmark.
+
+    )
+
+    report: result = (
+        'All: iterations=' print.
+        numIterations print.
+        ' average: ' print.
+        (result / numIterations) print.
+        'us' print.
+        ' total: ' print.
+        result print.
+        'us' println.
+    )
+)

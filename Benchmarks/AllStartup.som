@@ -1,0 +1,94 @@
+AllStartup = BenchmarkHarness (
+    | summedAverage elapsedTime totalTime |
+    all = (
+        ^ Fibonacci, Dispatch, Bounce, Loop, Permute, Queens, Recurse,
+          Storage, Sieve, BubbleSort, QuickSort, Sum, TreeSort,
+          NBody
+    )
+
+
+    micro = (
+        ^ Fibonacci, Dispatch, Bounce, Loop, Permute, Queens, Recurse,
+          Storage, Sieve, BubbleSort, QuickSort, Sum, TreeSort
+    )
+
+    macro = (^ NBody, Json)
+
+    initialize = (
+        super initialize.
+        summedAverage := 0.
+    )
+
+    initializeTime = (
+        totalTime := 0.
+        elapsedTime := 0.
+    )
+
+    run: params = (
+        params length < 2
+            ifTrue:  [ self exec: 100 ]
+            ifFalse: [ self exec: (params at: 2) asInteger ]
+    )
+
+    runBenchmark = (
+        | bench result |
+        bench := benchmarkClass new.
+        bench oneTimeSetup.
+
+        result := self doRuns: bench.
+        elapsedTime := result.
+        totalTime := totalTime + result.
+        "self reportBenchmark: bench result: result."
+
+    )
+
+    exec: iterations = (
+        | startTime endTime |
+
+        self initializeTime.
+
+        elapsedTime := 0.
+        self all do: [:cls |
+            self initialize.
+            self benchmarkClass: cls.
+            self printAll: false.
+            self numIterations: 2.
+            self runBenchmark.
+        ].
+
+        1 to: iterations do: [:i |
+
+            self printAll: false.
+            self benchmarkClass: NBody.
+            self numIterations: 100.
+            self runBenchmark.
+
+            self printAll: false.
+            self benchmarkClass: Json.
+            self numIterations: 1.
+            self runBenchmark.
+
+            'All: iterations=' print.
+            i print.
+            ' runtime: ' print.
+            elapsedTime print.
+            'us' println.
+        ].
+
+        '' println.
+        'Total Runtime: ' print.
+        totalTime print.
+        'us' println.
+    )
+
+    repor: result = (
+        'All: iterations=' print.
+        numIterations print.
+        ' average: ' print.
+        (result / numIterations) print.
+        'us' print.
+        ' total: ' print.
+        result print.
+        'us' println.
+    )
+)

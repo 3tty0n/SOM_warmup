@@ -1,0 +1,510 @@
+StressStartupFibonacci = Benchmark(
+
+fib_0: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_0: (n - 1)) + (self fib_0: (n - 2)) ].
+)
+
+fib_1: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_1: (n - 1)) + (self fib_1: (n - 2)) ].
+)
+
+fib_2: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_2: (n - 1)) + (self fib_2: (n - 2)) ].
+)
+
+fib_3: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_3: (n - 1)) + (self fib_3: (n - 2)) ].
+)
+
+fib_4: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_4: (n - 1)) + (self fib_4: (n - 2)) ].
+)
+
+fib_5: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_5: (n - 1)) + (self fib_5: (n - 2)) ].
+)
+
+fib_6: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_6: (n - 1)) + (self fib_6: (n - 2)) ].
+)
+
+fib_7: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_7: (n - 1)) + (self fib_7: (n - 2)) ].
+)
+
+fib_8: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_8: (n - 1)) + (self fib_8: (n - 2)) ].
+)
+
+fib_9: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_9: (n - 1)) + (self fib_9: (n - 2)) ].
+)
+
+fib_10: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_10: (n - 1)) + (self fib_10: (n - 2)) ].
+)
+
+fib_11: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_11: (n - 1)) + (self fib_11: (n - 2)) ].
+)
+
+fib_12: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_12: (n - 1)) + (self fib_12: (n - 2)) ].
+)
+
+fib_13: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_13: (n - 1)) + (self fib_13: (n - 2)) ].
+)
+
+fib_14: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_14: (n - 1)) + (self fib_14: (n - 2)) ].
+)
+
+fib_15: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_15: (n - 1)) + (self fib_15: (n - 2)) ].
+)
+
+fib_16: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_16: (n - 1)) + (self fib_16: (n - 2)) ].
+)
+
+fib_17: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_17: (n - 1)) + (self fib_17: (n - 2)) ].
+)
+
+fib_18: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_18: (n - 1)) + (self fib_18: (n - 2)) ].
+)
+
+fib_19: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_19: (n - 1)) + (self fib_19: (n - 2)) ].
+)
+
+fib_20: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_20: (n - 1)) + (self fib_20: (n - 2)) ].
+)
+
+fib_21: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_21: (n - 1)) + (self fib_21: (n - 2)) ].
+)
+
+fib_22: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_22: (n - 1)) + (self fib_22: (n - 2)) ].
+)
+
+fib_23: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_23: (n - 1)) + (self fib_23: (n - 2)) ].
+)
+
+fib_24: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_24: (n - 1)) + (self fib_24: (n - 2)) ].
+)
+
+fib_25: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_25: (n - 1)) + (self fib_25: (n - 2)) ].
+)
+
+fib_26: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_26: (n - 1)) + (self fib_26: (n - 2)) ].
+)
+
+fib_27: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_27: (n - 1)) + (self fib_27: (n - 2)) ].
+)
+
+fib_28: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_28: (n - 1)) + (self fib_28: (n - 2)) ].
+)
+
+fib_29: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_29: (n - 1)) + (self fib_29: (n - 2)) ].
+)
+
+fib_30: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_30: (n - 1)) + (self fib_30: (n - 2)) ].
+)
+
+fib_31: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_31: (n - 1)) + (self fib_31: (n - 2)) ].
+)
+
+fib_32: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_32: (n - 1)) + (self fib_32: (n - 2)) ].
+)
+
+fib_33: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_33: (n - 1)) + (self fib_33: (n - 2)) ].
+)
+
+fib_34: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_34: (n - 1)) + (self fib_34: (n - 2)) ].
+)
+
+fib_35: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_35: (n - 1)) + (self fib_35: (n - 2)) ].
+)
+
+fib_36: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_36: (n - 1)) + (self fib_36: (n - 2)) ].
+)
+
+fib_37: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_37: (n - 1)) + (self fib_37: (n - 2)) ].
+)
+
+fib_38: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_38: (n - 1)) + (self fib_38: (n - 2)) ].
+)
+
+fib_39: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_39: (n - 1)) + (self fib_39: (n - 2)) ].
+)
+
+fib_40: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_40: (n - 1)) + (self fib_40: (n - 2)) ].
+)
+
+fib_41: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_41: (n - 1)) + (self fib_41: (n - 2)) ].
+)
+
+fib_42: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_42: (n - 1)) + (self fib_42: (n - 2)) ].
+)
+
+fib_43: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_43: (n - 1)) + (self fib_43: (n - 2)) ].
+)
+
+fib_44: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_44: (n - 1)) + (self fib_44: (n - 2)) ].
+)
+
+fib_45: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_45: (n - 1)) + (self fib_45: (n - 2)) ].
+)
+
+fib_46: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_46: (n - 1)) + (self fib_46: (n - 2)) ].
+)
+
+fib_47: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_47: (n - 1)) + (self fib_47: (n - 2)) ].
+)
+
+fib_48: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_48: (n - 1)) + (self fib_48: (n - 2)) ].
+)
+
+fib_49: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_49: (n - 1)) + (self fib_49: (n - 2)) ].
+)
+
+fib_50: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_50: (n - 1)) + (self fib_50: (n - 2)) ].
+)
+
+fib_51: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_51: (n - 1)) + (self fib_51: (n - 2)) ].
+)
+
+fib_52: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_52: (n - 1)) + (self fib_52: (n - 2)) ].
+)
+
+fib_53: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_53: (n - 1)) + (self fib_53: (n - 2)) ].
+)
+
+fib_54: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_54: (n - 1)) + (self fib_54: (n - 2)) ].
+)
+
+fib_55: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_55: (n - 1)) + (self fib_55: (n - 2)) ].
+)
+
+fib_56: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_56: (n - 1)) + (self fib_56: (n - 2)) ].
+)
+
+fib_57: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_57: (n - 1)) + (self fib_57: (n - 2)) ].
+)
+
+fib_58: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_58: (n - 1)) + (self fib_58: (n - 2)) ].
+)
+
+fib_59: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_59: (n - 1)) + (self fib_59: (n - 2)) ].
+)
+
+fib_60: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_60: (n - 1)) + (self fib_60: (n - 2)) ].
+)
+
+fib_61: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_61: (n - 1)) + (self fib_61: (n - 2)) ].
+)
+
+fib_62: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_62: (n - 1)) + (self fib_62: (n - 2)) ].
+)
+
+fib_63: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_63: (n - 1)) + (self fib_63: (n - 2)) ].
+)
+
+fib_64: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_64: (n - 1)) + (self fib_64: (n - 2)) ].
+)
+
+fib_65: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_65: (n - 1)) + (self fib_65: (n - 2)) ].
+)
+
+fib_66: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_66: (n - 1)) + (self fib_66: (n - 2)) ].
+)
+
+fib_67: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_67: (n - 1)) + (self fib_67: (n - 2)) ].
+)
+
+fib_68: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_68: (n - 1)) + (self fib_68: (n - 2)) ].
+)
+
+fib_69: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_69: (n - 1)) + (self fib_69: (n - 2)) ].
+)
+
+fib_70: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_70: (n - 1)) + (self fib_70: (n - 2)) ].
+)
+
+fib_71: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_71: (n - 1)) + (self fib_71: (n - 2)) ].
+)
+
+fib_72: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_72: (n - 1)) + (self fib_72: (n - 2)) ].
+)
+
+fib_73: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_73: (n - 1)) + (self fib_73: (n - 2)) ].
+)
+
+fib_74: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_74: (n - 1)) + (self fib_74: (n - 2)) ].
+)
+
+fib_75: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_75: (n - 1)) + (self fib_75: (n - 2)) ].
+)
+
+fib_76: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_76: (n - 1)) + (self fib_76: (n - 2)) ].
+)
+
+fib_77: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_77: (n - 1)) + (self fib_77: (n - 2)) ].
+)
+
+fib_78: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_78: (n - 1)) + (self fib_78: (n - 2)) ].
+)
+
+fib_79: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_79: (n - 1)) + (self fib_79: (n - 2)) ].
+)
+
+fib_80: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_80: (n - 1)) + (self fib_80: (n - 2)) ].
+)
+
+fib_81: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_81: (n - 1)) + (self fib_81: (n - 2)) ].
+)
+
+fib_82: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_82: (n - 1)) + (self fib_82: (n - 2)) ].
+)
+
+fib_83: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_83: (n - 1)) + (self fib_83: (n - 2)) ].
+)
+
+fib_84: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_84: (n - 1)) + (self fib_84: (n - 2)) ].
+)
+
+fib_85: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_85: (n - 1)) + (self fib_85: (n - 2)) ].
+)
+
+fib_86: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_86: (n - 1)) + (self fib_86: (n - 2)) ].
+)
+
+fib_87: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_87: (n - 1)) + (self fib_87: (n - 2)) ].
+)
+
+fib_88: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_88: (n - 1)) + (self fib_88: (n - 2)) ].
+)
+
+fib_89: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_89: (n - 1)) + (self fib_89: (n - 2)) ].
+)
+
+fib_90: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_90: (n - 1)) + (self fib_90: (n - 2)) ].
+)
+
+fib_91: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_91: (n - 1)) + (self fib_91: (n - 2)) ].
+)
+
+fib_92: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_92: (n - 1)) + (self fib_92: (n - 2)) ].
+)
+
+fib_93: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_93: (n - 1)) + (self fib_93: (n - 2)) ].
+)
+
+fib_94: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_94: (n - 1)) + (self fib_94: (n - 2)) ].
+)
+
+fib_95: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_95: (n - 1)) + (self fib_95: (n - 2)) ].
+)
+
+fib_96: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_96: (n - 1)) + (self fib_96: (n - 2)) ].
+)
+
+fib_97: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_97: (n - 1)) + (self fib_97: (n - 2)) ].
+)
+
+fib_98: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_98: (n - 1)) + (self fib_98: (n - 2)) ].
+)
+
+fib_99: n = (
+  (n <= 1) ifTrue: [ ^ 1] ifFalse: [ ^ (self fib_99: (n - 1)) + (self fib_99: (n - 2)) ].
+)
+
+
+benchmark = (
+
+self fib_0: 20.
+self fib_1: 20.
+self fib_2: 20.
+self fib_3: 20.
+self fib_4: 20.
+self fib_5: 20.
+self fib_6: 20.
+self fib_7: 20.
+self fib_8: 20.
+self fib_9: 20.
+self fib_10: 20.
+self fib_11: 20.
+self fib_12: 20.
+self fib_13: 20.
+self fib_14: 20.
+self fib_15: 20.
+self fib_16: 20.
+self fib_17: 20.
+self fib_18: 20.
+self fib_19: 20.
+self fib_20: 20.
+self fib_21: 20.
+self fib_22: 20.
+self fib_23: 20.
+self fib_24: 20.
+self fib_25: 20.
+self fib_26: 20.
+self fib_27: 20.
+self fib_28: 20.
+self fib_29: 20.
+self fib_30: 20.
+self fib_31: 20.
+self fib_32: 20.
+self fib_33: 20.
+self fib_34: 20.
+self fib_35: 20.
+self fib_36: 20.
+self fib_37: 20.
+self fib_38: 20.
+self fib_39: 20.
+self fib_40: 20.
+self fib_41: 20.
+self fib_42: 20.
+self fib_43: 20.
+self fib_44: 20.
+self fib_45: 20.
+self fib_46: 20.
+self fib_47: 20.
+self fib_48: 20.
+self fib_49: 20.
+self fib_50: 20.
+self fib_51: 20.
+self fib_52: 20.
+self fib_53: 20.
+self fib_54: 20.
+self fib_55: 20.
+self fib_56: 20.
+self fib_57: 20.
+self fib_58: 20.
+self fib_59: 20.
+self fib_60: 20.
+self fib_61: 20.
+self fib_62: 20.
+self fib_63: 20.
+self fib_64: 20.
+self fib_65: 20.
+self fib_66: 20.
+self fib_67: 20.
+self fib_68: 20.
+self fib_69: 20.
+self fib_70: 20.
+self fib_71: 20.
+self fib_72: 20.
+self fib_73: 20.
+self fib_74: 20.
+self fib_75: 20.
+self fib_76: 20.
+self fib_77: 20.
+self fib_78: 20.
+self fib_79: 20.
+self fib_80: 20.
+self fib_81: 20.
+self fib_82: 20.
+self fib_83: 20.
+self fib_84: 20.
+self fib_85: 20.
+self fib_86: 20.
+self fib_87: 20.
+self fib_88: 20.
+self fib_89: 20.
+self fib_90: 20.
+self fib_91: 20.
+self fib_92: 20.
+self fib_93: 20.
+self fib_94: 20.
+self fib_95: 20.
+self fib_96: 20.
+self fib_97: 20.
+self fib_98: 20.
+^ self fib_99: 20.
+
+)
+
+verifyResult: result = (^ true)
+)

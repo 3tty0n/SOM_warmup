@@ -1,0 +1,31 @@
+LoopWhileTrue = Benchmark (
+
+    singleRun = (
+        | sum i |
+        sum := 0.
+        i := 0.
+        [ i < 100 ] whileTrue: [
+            sum := sum + 1.
+            i := i + 1.
+        ].
+        (sum = 100)
+            ifFalse: [
+                self error: 'Wrong result: ' + sum + ' should be: 100' ].
+        ^ sum
+    )
+
+    benchmark = (
+        | sum i |
+        sum := 0.
+        i := 0.
+        [ i < 200 ] whileTrue: [
+            sum := sum + self singleRun.
+            i := i + 1
+        ].
+        ^ sum
+    )
+
+    verifyResult: result = (
+      ^ 20000 = result
+    )
+)

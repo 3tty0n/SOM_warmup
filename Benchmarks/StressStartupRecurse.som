@@ -1,0 +1,610 @@
+StressStartupRecurse = Benchmark(
+
+recurse_0: n = (
+  (n > 0) ifTrue: [ self recurse_0: n - 1. self recurse_0: n - 1 ].
+  ^ n
+)
+
+recurse_1: n = (
+  (n > 0) ifTrue: [ self recurse_1: n - 1. self recurse_1: n - 1 ].
+  ^ n
+)
+
+recurse_2: n = (
+  (n > 0) ifTrue: [ self recurse_2: n - 1. self recurse_2: n - 1 ].
+  ^ n
+)
+
+recurse_3: n = (
+  (n > 0) ifTrue: [ self recurse_3: n - 1. self recurse_3: n - 1 ].
+  ^ n
+)
+
+recurse_4: n = (
+  (n > 0) ifTrue: [ self recurse_4: n - 1. self recurse_4: n - 1 ].
+  ^ n
+)
+
+recurse_5: n = (
+  (n > 0) ifTrue: [ self recurse_5: n - 1. self recurse_5: n - 1 ].
+  ^ n
+)
+
+recurse_6: n = (
+  (n > 0) ifTrue: [ self recurse_6: n - 1. self recurse_6: n - 1 ].
+  ^ n
+)
+
+recurse_7: n = (
+  (n > 0) ifTrue: [ self recurse_7: n - 1. self recurse_7: n - 1 ].
+  ^ n
+)
+
+recurse_8: n = (
+  (n > 0) ifTrue: [ self recurse_8: n - 1. self recurse_8: n - 1 ].
+  ^ n
+)
+
+recurse_9: n = (
+  (n > 0) ifTrue: [ self recurse_9: n - 1. self recurse_9: n - 1 ].
+  ^ n
+)
+
+recurse_10: n = (
+  (n > 0) ifTrue: [ self recurse_10: n - 1. self recurse_10: n - 1 ].
+  ^ n
+)
+
+recurse_11: n = (
+  (n > 0) ifTrue: [ self recurse_11: n - 1. self recurse_11: n - 1 ].
+  ^ n
+)
+
+recurse_12: n = (
+  (n > 0) ifTrue: [ self recurse_12: n - 1. self recurse_12: n - 1 ].
+  ^ n
+)
+
+recurse_13: n = (
+  (n > 0) ifTrue: [ self recurse_13: n - 1. self recurse_13: n - 1 ].
+  ^ n
+)
+
+recurse_14: n = (
+  (n > 0) ifTrue: [ self recurse_14: n - 1. self recurse_14: n - 1 ].
+  ^ n
+)
+
+recurse_15: n = (
+  (n > 0) ifTrue: [ self recurse_15: n - 1. self recurse_15: n - 1 ].
+  ^ n
+)
+
+recurse_16: n = (
+  (n > 0) ifTrue: [ self recurse_16: n - 1. self recurse_16: n - 1 ].
+  ^ n
+)
+
+recurse_17: n = (
+  (n > 0) ifTrue: [ self recurse_17: n - 1. self recurse_17: n - 1 ].
+  ^ n
+)
+
+recurse_18: n = (
+  (n > 0) ifTrue: [ self recurse_18: n - 1. self recurse_18: n - 1 ].
+  ^ n
+)
+
+recurse_19: n = (
+  (n > 0) ifTrue: [ self recurse_19: n - 1. self recurse_19: n - 1 ].
+  ^ n
+)
+
+recurse_20: n = (
+  (n > 0) ifTrue: [ self recurse_20: n - 1. self recurse_20: n - 1 ].
+  ^ n
+)
+
+recurse_21: n = (
+  (n > 0) ifTrue: [ self recurse_21: n - 1. self recurse_21: n - 1 ].
+  ^ n
+)
+
+recurse_22: n = (
+  (n > 0) ifTrue: [ self recurse_22: n - 1. self recurse_22: n - 1 ].
+  ^ n
+)
+
+recurse_23: n = (
+  (n > 0) ifTrue: [ self recurse_23: n - 1. self recurse_23: n - 1 ].
+  ^ n
+)
+
+recurse_24: n = (
+  (n > 0) ifTrue: [ self recurse_24: n - 1. self recurse_24: n - 1 ].
+  ^ n
+)
+
+recurse_25: n = (
+  (n > 0) ifTrue: [ self recurse_25: n - 1. self recurse_25: n - 1 ].
+  ^ n
+)
+
+recurse_26: n = (
+  (n > 0) ifTrue: [ self recurse_26: n - 1. self recurse_26: n - 1 ].
+  ^ n
+)
+
+recurse_27: n = (
+  (n > 0) ifTrue: [ self recurse_27: n - 1. self recurse_27: n - 1 ].
+  ^ n
+)
+
+recurse_28: n = (
+  (n > 0) ifTrue: [ self recurse_28: n - 1. self recurse_28: n - 1 ].
+  ^ n
+)
+
+recurse_29: n = (
+  (n > 0) ifTrue: [ self recurse_29: n - 1. self recurse_29: n - 1 ].
+  ^ n
+)
+
+recurse_30: n = (
+  (n > 0) ifTrue: [ self recurse_30: n - 1. self recurse_30: n - 1 ].
+  ^ n
+)
+
+recurse_31: n = (
+  (n > 0) ifTrue: [ self recurse_31: n - 1. self recurse_31: n - 1 ].
+  ^ n
+)
+
+recurse_32: n = (
+  (n > 0) ifTrue: [ self recurse_32: n - 1. self recurse_32: n - 1 ].
+  ^ n
+)
+
+recurse_33: n = (
+  (n > 0) ifTrue: [ self recurse_33: n - 1. self recurse_33: n - 1 ].
+  ^ n
+)
+
+recurse_34: n = (
+  (n > 0) ifTrue: [ self recurse_34: n - 1. self recurse_34: n - 1 ].
+  ^ n
+)
+
+recurse_35: n = (
+  (n > 0) ifTrue: [ self recurse_35: n - 1. self recurse_35: n - 1 ].
+  ^ n
+)
+
+recurse_36: n = (
+  (n > 0) ifTrue: [ self recurse_36: n - 1. self recurse_36: n - 1 ].
+  ^ n
+)
+
+recurse_37: n = (
+  (n > 0) ifTrue: [ self recurse_37: n - 1. self recurse_37: n - 1 ].
+  ^ n
+)
+
+recurse_38: n = (
+  (n > 0) ifTrue: [ self recurse_38: n - 1. self recurse_38: n - 1 ].
+  ^ n
+)
+
+recurse_39: n = (
+  (n > 0) ifTrue: [ self recurse_39: n - 1. self recurse_39: n - 1 ].
+  ^ n
+)
+
+recurse_40: n = (
+  (n > 0) ifTrue: [ self recurse_40: n - 1. self recurse_40: n - 1 ].
+  ^ n
+)
+
+recurse_41: n = (
+  (n > 0) ifTrue: [ self recurse_41: n - 1. self recurse_41: n - 1 ].
+  ^ n
+)
+
+recurse_42: n = (
+  (n > 0) ifTrue: [ self recurse_42: n - 1. self recurse_42: n - 1 ].
+  ^ n
+)
+
+recurse_43: n = (
+  (n > 0) ifTrue: [ self recurse_43: n - 1. self recurse_43: n - 1 ].
+  ^ n
+)
+
+recurse_44: n = (
+  (n > 0) ifTrue: [ self recurse_44: n - 1. self recurse_44: n - 1 ].
+  ^ n
+)
+
+recurse_45: n = (
+  (n > 0) ifTrue: [ self recurse_45: n - 1. self recurse_45: n - 1 ].
+  ^ n
+)
+
+recurse_46: n = (
+  (n > 0) ifTrue: [ self recurse_46: n - 1. self recurse_46: n - 1 ].
+  ^ n
+)
+
+recurse_47: n = (
+  (n > 0) ifTrue: [ self recurse_47: n - 1. self recurse_47: n - 1 ].
+  ^ n
+)
+
+recurse_48: n = (
+  (n > 0) ifTrue: [ self recurse_48: n - 1. self recurse_48: n - 1 ].
+  ^ n
+)
+
+recurse_49: n = (
+  (n > 0) ifTrue: [ self recurse_49: n - 1. self recurse_49: n - 1 ].
+  ^ n
+)
+
+recurse_50: n = (
+  (n > 0) ifTrue: [ self recurse_50: n - 1. self recurse_50: n - 1 ].
+  ^ n
+)
+
+recurse_51: n = (
+  (n > 0) ifTrue: [ self recurse_51: n - 1. self recurse_51: n - 1 ].
+  ^ n
+)
+
+recurse_52: n = (
+  (n > 0) ifTrue: [ self recurse_52: n - 1. self recurse_52: n - 1 ].
+  ^ n
+)
+
+recurse_53: n = (
+  (n > 0) ifTrue: [ self recurse_53: n - 1. self recurse_53: n - 1 ].
+  ^ n
+)
+
+recurse_54: n = (
+  (n > 0) ifTrue: [ self recurse_54: n - 1. self recurse_54: n - 1 ].
+  ^ n
+)
+
+recurse_55: n = (
+  (n > 0) ifTrue: [ self recurse_55: n - 1. self recurse_55: n - 1 ].
+  ^ n
+)
+
+recurse_56: n = (
+  (n > 0) ifTrue: [ self recurse_56: n - 1. self recurse_56: n - 1 ].
+  ^ n
+)
+
+recurse_57: n = (
+  (n > 0) ifTrue: [ self recurse_57: n - 1. self recurse_57: n - 1 ].
+  ^ n
+)
+
+recurse_58: n = (
+  (n > 0) ifTrue: [ self recurse_58: n - 1. self recurse_58: n - 1 ].
+  ^ n
+)
+
+recurse_59: n = (
+  (n > 0) ifTrue: [ self recurse_59: n - 1. self recurse_59: n - 1 ].
+  ^ n
+)
+
+recurse_60: n = (
+  (n > 0) ifTrue: [ self recurse_60: n - 1. self recurse_60: n - 1 ].
+  ^ n
+)
+
+recurse_61: n = (
+  (n > 0) ifTrue: [ self recurse_61: n - 1. self recurse_61: n - 1 ].
+  ^ n
+)
+
+recurse_62: n = (
+  (n > 0) ifTrue: [ self recurse_62: n - 1. self recurse_62: n - 1 ].
+  ^ n
+)
+
+recurse_63: n = (
+  (n > 0) ifTrue: [ self recurse_63: n - 1. self recurse_63: n - 1 ].
+  ^ n
+)
+
+recurse_64: n = (
+  (n > 0) ifTrue: [ self recurse_64: n - 1. self recurse_64: n - 1 ].
+  ^ n
+)
+
+recurse_65: n = (
+  (n > 0) ifTrue: [ self recurse_65: n - 1. self recurse_65: n - 1 ].
+  ^ n
+)
+
+recurse_66: n = (
+  (n > 0) ifTrue: [ self recurse_66: n - 1. self recurse_66: n - 1 ].
+  ^ n
+)
+
+recurse_67: n = (
+  (n > 0) ifTrue: [ self recurse_67: n - 1. self recurse_67: n - 1 ].
+  ^ n
+)
+
+recurse_68: n = (
+  (n > 0) ifTrue: [ self recurse_68: n - 1. self recurse_68: n - 1 ].
+  ^ n
+)
+
+recurse_69: n = (
+  (n > 0) ifTrue: [ self recurse_69: n - 1. self recurse_69: n - 1 ].
+  ^ n
+)
+
+recurse_70: n = (
+  (n > 0) ifTrue: [ self recurse_70: n - 1. self recurse_70: n - 1 ].
+  ^ n
+)
+
+recurse_71: n = (
+  (n > 0) ifTrue: [ self recurse_71: n - 1. self recurse_71: n - 1 ].
+  ^ n
+)
+
+recurse_72: n = (
+  (n > 0) ifTrue: [ self recurse_72: n - 1. self recurse_72: n - 1 ].
+  ^ n
+)
+
+recurse_73: n = (
+  (n > 0) ifTrue: [ self recurse_73: n - 1. self recurse_73: n - 1 ].
+  ^ n
+)
+
+recurse_74: n = (
+  (n > 0) ifTrue: [ self recurse_74: n - 1. self recurse_74: n - 1 ].
+  ^ n
+)
+
+recurse_75: n = (
+  (n > 0) ifTrue: [ self recurse_75: n - 1. self recurse_75: n - 1 ].
+  ^ n
+)
+
+recurse_76: n = (
+  (n > 0) ifTrue: [ self recurse_76: n - 1. self recurse_76: n - 1 ].
+  ^ n
+)
+
+recurse_77: n = (
+  (n > 0) ifTrue: [ self recurse_77: n - 1. self recurse_77: n - 1 ].
+  ^ n
+)
+
+recurse_78: n = (
+  (n > 0) ifTrue: [ self recurse_78: n - 1. self recurse_78: n - 1 ].
+  ^ n
+)
+
+recurse_79: n = (
+  (n > 0) ifTrue: [ self recurse_79: n - 1. self recurse_79: n - 1 ].
+  ^ n
+)
+
+recurse_80: n = (
+  (n > 0) ifTrue: [ self recurse_80: n - 1. self recurse_80: n - 1 ].
+  ^ n
+)
+
+recurse_81: n = (
+  (n > 0) ifTrue: [ self recurse_81: n - 1. self recurse_81: n - 1 ].
+  ^ n
+)
+
+recurse_82: n = (
+  (n > 0) ifTrue: [ self recurse_82: n - 1. self recurse_82: n - 1 ].
+  ^ n
+)
+
+recurse_83: n = (
+  (n > 0) ifTrue: [ self recurse_83: n - 1. self recurse_83: n - 1 ].
+  ^ n
+)
+
+recurse_84: n = (
+  (n > 0) ifTrue: [ self recurse_84: n - 1. self recurse_84: n - 1 ].
+  ^ n
+)
+
+recurse_85: n = (
+  (n > 0) ifTrue: [ self recurse_85: n - 1. self recurse_85: n - 1 ].
+  ^ n
+)
+
+recurse_86: n = (
+  (n > 0) ifTrue: [ self recurse_86: n - 1. self recurse_86: n - 1 ].
+  ^ n
+)
+
+recurse_87: n = (
+  (n > 0) ifTrue: [ self recurse_87: n - 1. self recurse_87: n - 1 ].
+  ^ n
+)
+
+recurse_88: n = (
+  (n > 0) ifTrue: [ self recurse_88: n - 1. self recurse_88: n - 1 ].
+  ^ n
+)
+
+recurse_89: n = (
+  (n > 0) ifTrue: [ self recurse_89: n - 1. self recurse_89: n - 1 ].
+  ^ n
+)
+
+recurse_90: n = (
+  (n > 0) ifTrue: [ self recurse_90: n - 1. self recurse_90: n - 1 ].
+  ^ n
+)
+
+recurse_91: n = (
+  (n > 0) ifTrue: [ self recurse_91: n - 1. self recurse_91: n - 1 ].
+  ^ n
+)
+
+recurse_92: n = (
+  (n > 0) ifTrue: [ self recurse_92: n - 1. self recurse_92: n - 1 ].
+  ^ n
+)
+
+recurse_93: n = (
+  (n > 0) ifTrue: [ self recurse_93: n - 1. self recurse_93: n - 1 ].
+  ^ n
+)
+
+recurse_94: n = (
+  (n > 0) ifTrue: [ self recurse_94: n - 1. self recurse_94: n - 1 ].
+  ^ n
+)
+
+recurse_95: n = (
+  (n > 0) ifTrue: [ self recurse_95: n - 1. self recurse_95: n - 1 ].
+  ^ n
+)
+
+recurse_96: n = (
+  (n > 0) ifTrue: [ self recurse_96: n - 1. self recurse_96: n - 1 ].
+  ^ n
+)
+
+recurse_97: n = (
+  (n > 0) ifTrue: [ self recurse_97: n - 1. self recurse_97: n - 1 ].
+  ^ n
+)
+
+recurse_98: n = (
+  (n > 0) ifTrue: [ self recurse_98: n - 1. self recurse_98: n - 1 ].
+  ^ n
+)
+
+recurse_99: n = (
+  (n > 0) ifTrue: [ self recurse_99: n - 1. self recurse_99: n - 1 ].
+  ^ n
+)
+
+
+benchmark = (
+
+self recurse_0: 13.
+self recurse_1: 13.
+self recurse_2: 13.
+self recurse_3: 13.
+self recurse_4: 13.
+self recurse_5: 13.
+self recurse_6: 13.
+self recurse_7: 13.
+self recurse_8: 13.
+self recurse_9: 13.
+self recurse_10: 13.
+self recurse_11: 13.
+self recurse_12: 13.
+self recurse_13: 13.
+self recurse_14: 13.
+self recurse_15: 13.
+self recurse_16: 13.
+self recurse_17: 13.
+self recurse_18: 13.
+self recurse_19: 13.
+self recurse_20: 13.
+self recurse_21: 13.
+self recurse_22: 13.
+self recurse_23: 13.
+self recurse_24: 13.
+self recurse_25: 13.
+self recurse_26: 13.
+self recurse_27: 13.
+self recurse_28: 13.
+self recurse_29: 13.
+self recurse_30: 13.
+self recurse_31: 13.
+self recurse_32: 13.
+self recurse_33: 13.
+self recurse_34: 13.
+self recurse_35: 13.
+self recurse_36: 13.
+self recurse_37: 13.
+self recurse_38: 13.
+self recurse_39: 13.
+self recurse_40: 13.
+self recurse_41: 13.
+self recurse_42: 13.
+self recurse_43: 13.
+self recurse_44: 13.
+self recurse_45: 13.
+self recurse_46: 13.
+self recurse_47: 13.
+self recurse_48: 13.
+self recurse_49: 13.
+self recurse_50: 13.
+self recurse_51: 13.
+self recurse_52: 13.
+self recurse_53: 13.
+self recurse_54: 13.
+self recurse_55: 13.
+self recurse_56: 13.
+self recurse_57: 13.
+self recurse_58: 13.
+self recurse_59: 13.
+self recurse_60: 13.
+self recurse_61: 13.
+self recurse_62: 13.
+self recurse_63: 13.
+self recurse_64: 13.
+self recurse_65: 13.
+self recurse_66: 13.
+self recurse_67: 13.
+self recurse_68: 13.
+self recurse_69: 13.
+self recurse_70: 13.
+self recurse_71: 13.
+self recurse_72: 13.
+self recurse_73: 13.
+self recurse_74: 13.
+self recurse_75: 13.
+self recurse_76: 13.
+self recurse_77: 13.
+self recurse_78: 13.
+self recurse_79: 13.
+self recurse_80: 13.
+self recurse_81: 13.
+self recurse_82: 13.
+self recurse_83: 13.
+self recurse_84: 13.
+self recurse_85: 13.
+self recurse_86: 13.
+self recurse_87: 13.
+self recurse_88: 13.
+self recurse_89: 13.
+self recurse_90: 13.
+self recurse_91: 13.
+self recurse_92: 13.
+self recurse_93: 13.
+self recurse_94: 13.
+self recurse_95: 13.
+self recurse_96: 13.
+self recurse_97: 13.
+self recurse_98: 13.
+^ self recurse_99: 13.
+
+)
+
+verifyResult: result = (^ true)
+)

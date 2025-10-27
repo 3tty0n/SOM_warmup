@@ -1,0 +1,69 @@
+Experiment = BenchmarkHarness (
+    | summedAverage elapsedTime totalTime |
+
+    initialize = (
+        super initialize.
+        summedAverage := 0.
+    )
+
+    initializeTime = (
+        totalTime := 0.
+        elapsedTime := 0.
+    )
+
+    run: params = (
+        params length < 2
+            ifTrue:  [ self exec: 100 ]
+            ifFalse: [ self exec: (params at: 2) asInteger ]
+    )
+
+    runBenchmark = (
+        | bench result |
+        bench := benchmarkClass new.
+        bench oneTimeSetup.
+
+        result := self doRuns: bench.
+        elapsedTime := result.
+        totalTime := totalTime + result.
+        "self reportBenchmark: bench result: result."
+
+    )
+
+    exec: iterations = (
+        | startTime endTime |
+
+        self initializeTime.
+
+        elapsedTime := 0.
+
+        self initialize.
+        self printAll: false.
+
+        self benchmarkClass: DeltaBlue.
+        self numIterations: 10.
+        self runBenchmark.
+
+        self benchmarkClass: Json.
+        self numIterations: 1.
+        self runBenchmark.
+
+        self benchmarkClass: CD.
+        self numIterations: 10.
+        self runBenchmark.
+
+        'Total Runtime: ' print.
+        totalTime print.
+        'us' println.
+    )
+
+    repor: result = (
+        'All: iterations=' print.
+        numIterations print.
+        ' average: ' print.
+        (result / numIterations) print.
+        'us' print.
+        ' total: ' print.
+        result print.
+        'us' println.
+    )
+)
