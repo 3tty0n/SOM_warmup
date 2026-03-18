@@ -32,26 +32,47 @@ Storage, DeltaBlue, Json, Permute, CD, Sieve, Towers, TreeSort
 
 ## Prerequisites
 
-- A SOM implementation (e.g., [SOM](https://github.com/SOM-st), TruffleSOM, RPySOM, CSOM, etc.)
-- The SOM standard library (`Smalltalk/`)
-- The standard SOM benchmark classes listed above (typically found in `Examples/Benchmarks/` of your SOM implementation)
-- [ReBench](https://rebench.readthedocs.io/) (for automated benchmarking)
+- A SOM implementation with the [SOM standard library](https://github.com/SOM-st/SOM)
+  - `Smalltalk/` (standard library)
+  - `Examples/Benchmarks/` (benchmark classes including `BenchmarkHarness.som`)
+- [ReBench](https://rebench.readthedocs.io/) (for automated benchmarking, optional)
 
-## Running Manually
+## Running with SOM
 
-Run a single experiment directly with your SOM implementation:
+The SOM standard library repository ([SOM-st/SOM](https://github.com/SOM-st/SOM)) contains the `Smalltalk/` standard library, `BenchmarkHarness.som`, and all individual benchmark classes (NBody, Json, DeltaBlue, CD, etc.) under `Examples/Benchmarks/`.
+
+Clone the standard library if your SOM implementation does not bundle it:
 
 ```sh
-# Experiment (single-pass, shuffled order)
-./som -cp Smalltalk:Examples/Benchmarks:Examples/Benchmarks/NBody:Examples/Benchmarks/Json:Examples/Benchmarks/DeltaBlue:Examples/Benchmarks/CD \
-  path/to/som-experiment-benchmarks/Experiment/Experiment1.som
-
-# ExperimentStable (iterated, 100 iterations)
-./som -cp Smalltalk:Examples/Benchmarks:Examples/Benchmarks/NBody:Examples/Benchmarks/Json:Examples/Benchmarks/DeltaBlue:Examples/Benchmarks/CD \
-  path/to/som-experiment-benchmarks/ExperimentStable/ExperimentStable1.som 100
+git clone https://github.com/SOM-st/SOM.git
 ```
 
-Adjust the classpath (`-cp`) to match your SOM implementation's directory layout.
+Then run with any SOM implementation (CSOM, SOM++, TruffleSOM, PySOM, RPySOM, etc.):
+
+```sh
+SOM_DIR=path/to/SOM
+BENCH_DIR=path/to/som-experiment-benchmarks
+
+# Experiment (single-pass, shuffled order)
+./som -cp $SOM_DIR/Smalltalk:$SOM_DIR/Examples/Benchmarks:$SOM_DIR/Examples/Benchmarks/NBody:$SOM_DIR/Examples/Benchmarks/Json:$SOM_DIR/Examples/Benchmarks/DeltaBlue:$SOM_DIR/Examples/Benchmarks/CD \
+  $BENCH_DIR/Experiment/Experiment1.som
+
+# ExperimentStable (iterated, 100 iterations)
+./som -cp $SOM_DIR/Smalltalk:$SOM_DIR/Examples/Benchmarks:$SOM_DIR/Examples/Benchmarks/NBody:$SOM_DIR/Examples/Benchmarks/Json:$SOM_DIR/Examples/Benchmarks/DeltaBlue:$SOM_DIR/Examples/Benchmarks/CD \
+  $BENCH_DIR/ExperimentStable/ExperimentStable1.som 100
+```
+
+For example, with CSOM:
+
+```sh
+# Build CSOM
+git clone https://github.com/SOM-st/CSOM.git
+cd CSOM && make
+
+# Run an experiment
+./CSOM -cp ../SOM/Smalltalk:../SOM/Examples/Benchmarks:../SOM/Examples/Benchmarks/NBody:../SOM/Examples/Benchmarks/Json:../SOM/Examples/Benchmarks/DeltaBlue:../SOM/Examples/Benchmarks/CD \
+  ../som-experiment-benchmarks/Experiment/Experiment1.som
+```
 
 ## Running with ReBench
 
