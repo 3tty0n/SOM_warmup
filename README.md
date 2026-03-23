@@ -50,14 +50,14 @@ Then run with any SOM implementation (CSOM, SOM++, TruffleSOM, PySOM, RPySOM, et
 
 ```sh
 SOM_DIR=path/to/SOM
-BENCH_DIR=path/to/som-experiment-benchmarks
+BENCH_DIR=path/to/SOM_warmup
 
 # Experiment (single-pass, shuffled order)
-./som -cp $SOM_DIR/Smalltalk:$SOM_DIR/Examples/Benchmarks:$SOM_DIR/Examples/Benchmarks/NBody:$SOM_DIR/Examples/Benchmarks/Json:$SOM_DIR/Examples/Benchmarks/DeltaBlue:$SOM_DIR/Examples/Benchmarks/CD \
+./som -cp $SOM_DIR/Smalltalk:$BENCH_DIR/Experiment:$SOM_DIR/Examples/Benchmarks:$SOM_DIR/Examples/Benchmarks/NBody:$SOM_DIR/Examples/Benchmarks/Json:$SOM_DIR/Examples/Benchmarks/DeltaBlue:$SOM_DIR/Examples/Benchmarks/CD \
   $BENCH_DIR/Experiment/Experiment1.som
 
 # ExperimentStable (iterated, 100 iterations)
-./som -cp $SOM_DIR/Smalltalk:$SOM_DIR/Examples/Benchmarks:$SOM_DIR/Examples/Benchmarks/NBody:$SOM_DIR/Examples/Benchmarks/Json:$SOM_DIR/Examples/Benchmarks/DeltaBlue:$SOM_DIR/Examples/Benchmarks/CD \
+./som -cp $SOM_DIR/Smalltalk:$BENCH_DIR/Experiment:$SOM_DIR/Examples/Benchmarks:$SOM_DIR/Examples/Benchmarks/NBody:$SOM_DIR/Examples/Benchmarks/Json:$SOM_DIR/Examples/Benchmarks/DeltaBlue:$SOM_DIR/Examples/Benchmarks/CD \
   $BENCH_DIR/ExperimentStable/ExperimentStable1.som 100
 ```
 
@@ -69,8 +69,8 @@ git clone https://github.com/SOM-st/CSOM.git
 cd CSOM && make
 
 # Run an experiment
-./CSOM -cp ../SOM/Smalltalk:../SOM/Examples/Benchmarks:../SOM/Examples/Benchmarks/NBody:../SOM/Examples/Benchmarks/Json:../SOM/Examples/Benchmarks/DeltaBlue:../SOM/Examples/Benchmarks/CD \
-  ../som-experiment-benchmarks/Experiment/Experiment1.som
+./CSOM -cp ../SOM/Smalltalk:../Experiment:../SOM/Examples/Benchmarks:../SOM/Examples/Benchmarks/NBody:../SOM/Examples/Benchmarks/Json:../SOM/Examples/Benchmarks/DeltaBlue:../SOM/Examples/Benchmarks/CD \
+  ../Experiment/Experiment1.som
 ```
 
 ## Running with ReBench
