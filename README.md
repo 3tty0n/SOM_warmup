@@ -6,7 +6,6 @@ Each benchmark runs 16 standard SOM benchmarks in a different shuffled order wit
 ## Structure
 
 ```
-Experiment.som                  # Base experiment (small subset: DeltaBlue, Json, CD)
 Experiment/
   Experiment1.som ... Experiment20.som   # Shuffled-order, single-pass execution
   ExperimentRandom.som                   # Randomized order variant
